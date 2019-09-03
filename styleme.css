@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    background-color: #353535;
+    color: #ffffff;
+}
+h1, h2 {
+    color: dodgerblue;
+}
+a {
+    color:orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: dodgerblue;
+}
+b {
+    color:yellow;
+}
+P:first-letter{
+    font-size: 2em;
+    font-family: Georgia;
+}
+dt {
+    color:yellow;
+    font-weight: bold;
+}
+dd {
+    white-space: nowrap;
+    width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

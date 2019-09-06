@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function max(n1,n2){
+            if(n1>n2){
+                return n1;
+            }else{
+                return n2;
+            }
+        }
+        function maxOfThree(n1,n2,n3){
+            if(n1>n2){
+                if(n1>n3){
+                    return n1;
+                }else{
+                    return n3;
+                }
+            }else{
+                if(n2>n3){
+                    return n2;
+                }else{
+                    return n3;
+                }
+            }
+        }
+        function isVowel(s){
+            if(s==='A' ||s==='E' ||s==='I' ||s==='O' ||s==='U' ||s==='a' ||s==='e' ||s==='i' ||s==='o' ||s==='u'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        function sum(n){
+            let sum=0;
+            for(let i=0;i<n.length; i++){
+                sum += n[i];
+            }
+            return sum;
+        }
+        function multiply(n){
+            let res=n[0];
+            for(let i=1;i<n.length; i++){
+                res *= n[i];
+            }
+            return res;
+        }
+        function reverse(s){
+            let rev ="";
+            for(let i=s.length-1; i>=0; i--){
+                rev += s[i];
+            }
+            return rev;
+        }
+        function findLongestWord(arr){
+            let len=0;
+            for(let i=0; i<arr.length; i++){
+                if(arr[i].length>len){
+                    len = arr[i].length;
+                }
+            }
+            return len;
+        }
+        function filterLongWords(arr,i){
+            let resArr = [];
+            for(let j=0;j<arr.length;j++){
+                if(arr[j].length > i){
+                    resArr.push(arr[j]);
+                }
+            }
+            return resArr;
+        }
+
+    </script>
+    <body>
+        <button  onclick="console.log(max(2,5))">max(2,5)</button><br/>
+        <button  onclick="console.log(maxOfThree(2,5,3))">maxOfThree(2,5,3)</button><br/>
+        <button  onclick="console.log(isVowel('x'))">isVowel('x')</button><br/>
+        <button  onclick="console.log(sum([1,2,3,4]))">sum([1,2,3,4])</button><br/>
+        <button  onclick="console.log(multiply([1,2,3,4]))">multiply([1,2,3,4])</button><br/>
+        <button  onclick="console.log(reverse('Ali Mohammad'))">reverse('Ali Mohammad')</button><br/>
+        <button  onclick="console.log(findLongestWord(['a','abc','bc']))">findLongestWord(['a','abc','bc'])</button><br/>
+        <button  onclick="console.log(filterLongWords(['Ali','Mohammad','Mike'],3))">filterLongWords(['Ali','Mohammad','Mike'],3)</button><br/>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    margin: 10px 50px;
+    font-family: arial;
+    font-size: 1em;
+
+}
+.intro > header{
+    padding: 5px 20px;
+    background-image: url("https://www.trentham.co.uk/media/1132/trentham-gardens-150.jpg?anchor=center&mode=crop&width=2000&height=666&rnd=131786370390000000");
+    color: white;
+    font-size: 3em;
+}
+.summary, .preamble{
+    padding: 5px 20px;
+    background-color: #eee;
+}
+aside{
+    padding: 10px;
+    width: 25%;
+    float: left;
+    background-color: rgba(30,30,30,0.5);
+}
+.supporting{
+    width: 70%;
+    float: right;
+}
+
+.main h3{
+    font-size: 2em;
+}
+.explanation{
+    background-color: lightpink;
+}
+.participation{
+    background-color: aquamarine
+}
+.benefits{
+    background-color: lightgoldenrodyellow;
+}
+.requirements{
+    background-color:lightskyblue;
+}
+
+.main > div{
+    padding:20px;
+}
+
+
+
